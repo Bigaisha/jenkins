@@ -6,7 +6,6 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
-import static tests.demoqa.TestData.email;
 
 public class RegistrationTest extends TestBase {
     @Test
@@ -17,7 +16,7 @@ public class RegistrationTest extends TestBase {
         $("[alt=\"adplus-dvertising\"]").click();
         $("#firstName").setValue("Bigaisha");
         $("#lastName").setValue("Shalabayeva");
-        $("#userEmail").setValue(email);
+        $("#userEmail").setValue("bigaisha@gmail.com");
         $("#genterWrapper").$(byText("Female")).click();
         $("#userNumber").setValue("7023998900");
         $("#currentAddress").setValue("Samal-1-19-3");
@@ -36,7 +35,7 @@ public class RegistrationTest extends TestBase {
         $("#submit").click();
 
         $(".table").shouldHave(
-                text("Bigaisha Shalabayeva"), text(email),
+                text("Bigaisha Shalabayeva"), text("bigaisha@gmail.com"),
                 text("Female"), text("7023998900"),
                 text("05 November,1991"), text("English"),
                 text("Reading"), text("1.png"),
