@@ -39,8 +39,7 @@ public class RegistrationTest extends TestBase {
                 text("Female"), text("7023998900"),
                 text("05 November,1991"), text("English"),
                 text("Reading"), text("1.png"),
-                text("Samal-1-19-3"), text("NCR Delhi"),
-                text("7023998900"), text("7023998900")
+                text("Samal-1-19-3"), text("NCR Delhi")
         );
     }
 }
