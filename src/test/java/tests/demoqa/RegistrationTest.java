@@ -27,7 +27,7 @@ public class RegistrationTest extends TestBase {
         $("#subjectsInput").setValue("Eng");
         $("#subjectsWrapper").$(byText("English")).click();
         $("#hobbiesWrapper").$(byText("Reading")).click();
-        $("#uploadPicture").uploadFromClasspath("img/1.png");
+//        $("#uploadPicture").uploadFromClasspath("img/1.png");
         $("#state").scrollTo().click();
         $("#stateCity-wrapper").$(byText("NCR")).click();
         $("#city").click();
@@ -38,8 +38,9 @@ public class RegistrationTest extends TestBase {
                 text("Bigaisha Shalabayeva"), text("bigaisha@gmail.com"),
                 text("Female"), text("7023998900"),
                 text("05 November,1991"), text("English"),
-                text("Reading"), text("1.png"),
-                text("Samal-1-19-3"), text("NCR Delhi")
+                text("Reading"),
+//                text("1.png"),
+                text("Samal-1-19-3"),text("NCR Delhi")
         );
     }
 }
