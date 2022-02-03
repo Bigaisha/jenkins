@@ -32,7 +32,7 @@ public class SystemPropertiesTest {
                 System.getProperty("someKey", "true")
         );
         assertTrue(someValue);
-        System.out.println(someValue); // blue value
+        System.out.println(someValue);
     }
     @Test
     @Tag("properties")
