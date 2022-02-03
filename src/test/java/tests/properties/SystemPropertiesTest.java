@@ -34,7 +34,6 @@ public class SystemPropertiesTest {
         assertTrue(someValue);
         System.out.println(someValue);
     }
-
     @Test
     @Tag("properties")
     void someTest5(){
