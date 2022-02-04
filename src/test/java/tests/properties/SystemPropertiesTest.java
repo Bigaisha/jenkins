@@ -22,9 +22,9 @@ public class SystemPropertiesTest {
         System.out.println(someValue); // red value
     }
     @Test
-    void someTest3(){
+    void someTest3() {
         String someValue = System.getProperty("someKey", "blue value");
-        System.out.println(someValue); // blue value
+        System.out.println(someValue);
     }
     @Test
     void someTest4(){
