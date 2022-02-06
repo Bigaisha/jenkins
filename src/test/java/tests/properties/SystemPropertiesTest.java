@@ -26,14 +26,14 @@ public class SystemPropertiesTest {
         String someValue = System.getProperty("someKey", "blue value");
         System.out.println(someValue);
     }
-    @Test
-    void someTest4(){
-        Boolean someValue = Boolean.parseBoolean(
-                System.getProperty("someKey", "true")
-        );
-        assertTrue(someValue);
-        System.out.println(someValue);
-    }
+//    @Test
+//    void someTest4(){
+//        Boolean someValue = Boolean.parseBoolean(
+//                System.getProperty("someKey", "true")
+//        );
+//        assertTrue(someValue);
+//        System.out.println(someValue);
+//    }
     @Test
     @Tag("properties")
     void someTest5(){
